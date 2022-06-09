@@ -4,6 +4,7 @@ import 'package:get_it/get_it.dart';
 import 'package:provider/provider.dart';
 import 'package:team_soccer_coach/bloc/advertisement_bloc.dart';
 import 'package:team_soccer_coach/dashboard/advertisements_screen.dart';
+import 'package:team_soccer_coach/theme.dart';
 
 class DashboardScreen extends StatefulWidget {
   const DashboardScreen._();
@@ -54,20 +55,19 @@ class _ItemCard extends StatelessWidget {
                       AdvertisementsScreen.init(advertisements!)))
           .then((value) => bloc.getAdvertisement())),
       child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Wrap(children: [
+        padding: const EdgeInsets.all(16.0),
+        child: Wrap(runSpacing: 10,children: [
+          Text('Anuncio',
+            style: TextStyle(
+              color: SoccerColors.blueColor, 
+              fontSize: 24,
+              fontWeight: FontWeight.bold
+            )),
           Container(
               decoration: BoxDecoration(
                 color: const Color(0xFFFFFFFF),
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.circular(10.0),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Colors.black12,
-                    blurRadius: 10.0,
-                    offset: Offset(0.0, 10.0),
-                  ),
-                ],
               ),
               child: Padding(
                 padding: const EdgeInsets.all(10),
@@ -77,16 +77,17 @@ class _ItemCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        advertisements?.getTitle() ?? "",
+                        advertisements?.getTitle() ?? "Titulo anuncio",
                         style: TextStyle(
                             fontSize: 18,
-                            color: Color(0xFF152D93),
+                            color: SoccerColors.blueColor,
                             fontWeight: FontWeight.bold),
                       ),
+                      const SizedBox(height: 4),
                       Text(
-                        advertisements?.getContent() ?? "",
+                        advertisements?.getContent() ?? "Contenido",
                         style:
-                            TextStyle(fontSize: 14, color: Color(0xff4E4957)),
+                            TextStyle(fontSize: 16, color: SoccerColors.grey),
                       )
                     ],
                   ),

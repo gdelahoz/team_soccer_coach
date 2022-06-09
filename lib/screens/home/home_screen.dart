@@ -4,6 +4,7 @@ import 'package:team_soccer_coach/bloc/home_bloc.dart';
 import 'package:team_soccer_coach/dashboard/dashboard_screen.dart';
 import 'package:team_soccer_coach/screens/events/event_screen.dart';
 import 'package:team_soccer_coach/screens/team/team_screen.dart';
+import 'package:team_soccer_coach/theme.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen._();
@@ -45,6 +46,7 @@ class _SoccerNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     final bloc = context.watch<HomeBLoC>();
     return BottomNavigationBar(
+        selectedItemColor: SoccerColors.blueColor,
         currentIndex: bloc.indexSelected,
         onTap: (index) => bloc.updateIndexSelected(index),
         items: const [
@@ -61,7 +63,7 @@ class _SoccerAppBar extends StatelessWidget with PreferredSizeWidget {
   Widget build(BuildContext context) {
     final bloc = context.watch<HomeBLoC>();
     return Material(
-      elevation: 5,
+      elevation: 0,
       child: Column(
         children: [
           Padding(
@@ -80,7 +82,7 @@ class _SoccerAppBar extends StatelessWidget with PreferredSizeWidget {
                           fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      bloc.secondText.isEmpty ? "Nan" : bloc.secondText,
+                      bloc.secondText.isEmpty ? "Entrenador" : bloc.secondText,
                       textAlign: TextAlign.start,
                       style: const TextStyle(
                           color: Color(0xFFFE9402),
@@ -93,10 +95,10 @@ class _SoccerAppBar extends StatelessWidget with PreferredSizeWidget {
                 ClipOval(
                   child: InkWell(
                     splashColor: Color(0xFFFE9402),
-                    onTap: (() => print("On taop")),
-                    child: CircleAvatar(
-                      radius: 25,
-                      backgroundImage: NetworkImage(""),
+                    onTap: (() => print("On tap")),
+                    child: const CircleAvatar(
+                      radius: 32,
+                      backgroundImage: NetworkImage("https://instagram.fctg1-3.fna.fbcdn.net/v/t51.2885-19/205932112_667865500749914_356908178677727680_n.jpg?stp=dst-jpg_s320x320&_nc_ht=instagram.fctg1-3.fna.fbcdn.net&_nc_cat=102&_nc_ohc=fur6EvrS6OUAX9FPUoa&edm=AOQ1c0wBAAAA&ccb=7-5&oh=00_AT89tfKM-u33Qz0dbsEldsZfUYTvETZoKF4inmqzimIDvA&oe=62A7EE38&_nc_sid=8fd12b"),
                       backgroundColor: Colors.transparent,
                     ),
                   ),
@@ -110,5 +112,5 @@ class _SoccerAppBar extends StatelessWidget with PreferredSizeWidget {
   }
 
   @override
-  Size get preferredSize => const Size.fromHeight(80);
+  Size get preferredSize => const Size.fromHeight(100);
 }

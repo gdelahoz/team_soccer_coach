@@ -30,7 +30,7 @@ class TeamScreen extends StatelessWidget {
             bloc.getTeam();
           });
         },
-        child: Icon(Icons.person_add),
+        child: const Icon(Icons.person_add),
       ),
       backgroundColor: const Color(0xFFE5E5E5),
       body: Column(

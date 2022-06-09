@@ -8,6 +8,7 @@ class SoccerColors {
   static final veryLigthGrey = Color(0xFFF3F3F3);
   static final white = Color(0xFFFFFFFF);
   static final ligthGrey = Color(0xFFBBBBBB);
+  static final grey = Color.fromARGB(255, 83, 83, 83);
 }
 
 final deliveryGradiant = [SoccerColors.yellowColor, SoccerColors.blueColor];
@@ -31,8 +32,8 @@ final ligthTheme = ThemeData(
     bottomAppBarColor: SoccerColors.veryLigthGrey,
     scaffoldBackgroundColor: SoccerColors.white,
     textTheme: GoogleFonts.poppinsTextTheme().apply(
-        bodyColor: SoccerColors.yellowColor,
-        displayColor: SoccerColors.yellowColor),
+        bodyColor: SoccerColors.grey,
+        displayColor: SoccerColors.grey),
     inputDecorationTheme: InputDecorationTheme(
         border: _borderLigth,
         enabledBorder: _borderLigth,
