@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "1066961519392",
+    "project_id": "teamsoccerup",
+    "storage_bucket": "teamsoccerup.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066961519392:android:e0989e67ced7dc6535cd45",
+        "android_client_info": {
+          "package_name": "com.jonathan.team_soccer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066961519392-nu7scj8jick2i2mcmo5bu13nvogs7ojb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jonathan.team_soccer",
+            "certificate_hash": "ac89f167979c5a001142f7c093add146d66dfe62"
+          }
+        },
+        {
+          "client_id": "1066961519392-i5505gblcs45a8i3fhgoejk3lgsqrv8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQmLna9wLrtwUfDRcJzjOLP_EWrKDBE0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066961519392-i5505gblcs45a8i3fhgoejk3lgsqrv8r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1066961519392-eta5pmtn1bhh10gid9h7bp10nre50f7k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jonathan.teamSoccerCoach"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066961519392:android:8d08ce666b8327ad35cd45",
+        "android_client_info": {
+          "package_name": "com.jonathan.team_soccer_coach"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066961519392-92lck25d94jsv43dsbpa3ce0uhm644cs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jonathan.team_soccer_coach",
+            "certificate_hash": "ac89f167979c5a001142f7c093add146d66dfe62"
+          }
+        },
+        {
+          "client_id": "1066961519392-i5505gblcs45a8i3fhgoejk3lgsqrv8r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQmLna9wLrtwUfDRcJzjOLP_EWrKDBE0I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066961519392-i5505gblcs45a8i3fhgoejk3lgsqrv8r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1066961519392-eta5pmtn1bhh10gid9h7bp10nre50f7k.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.jonathan.teamSoccerCoach"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

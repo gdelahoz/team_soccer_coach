@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1066961519392-eta5pmtn1bhh10gid9h7bp10nre50f7k.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1066961519392-eta5pmtn1bhh10gid9h7bp10nre50f7k</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1066961519392-92lck25d94jsv43dsbpa3ce0uhm644cs.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDcCOmCxMegfk04MtmR9bG39Ecc6VowO64</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1066961519392</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.jonathan.teamSoccerCoach</string>
+	<key>PROJECT_ID</key>
+	<string>teamsoccerup</string>
+	<key>STORAGE_BUCKET</key>
+	<string>teamsoccerup.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1066961519392:ios:21b6706f130db78c35cd45</string>
+</dict>
+</plist>
